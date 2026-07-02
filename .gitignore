@@ -1,0 +1,66 @@
+# Directories that Ren'Py changes files in.
+/game/saves
+/game/cache
+
+# Compiled script files. These are important for saving, and so should
+# be preserved by developer and build systems after the game has been released.
+/game/**/*.rpyc
+/game/**/*.rpymc
+
+# Files Ren'Py can generate.
+/game/**/*.bak
+/game/**/*.new
+/game/**/*.old
+
+# Error, log, and output files.
+/errors.txt
+/files.txt
+/image_cache.txt
+/log.txt
+/save_dump.txt
+/traceback.txt
+
+# Launcher-generated files.
+/dialogue.tab
+/dialogue.txt
+/strings.json
+
+# ============================================
+# 自定义部分
+# ============================================
+# 编辑器 & IDE
+.idea/
+.vscode/
+
+# AI 编程助手 & Agent 配置文件（全局忽略）
+
+# --- 核心 Agent 指令文件 ---
+AGENTS.md
+AGENTS
+agent.md
+.agent
+agents/
+
+# --- Claude Code / Anthropic ---
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+.claude.json
+.claude.local.json
+*claude_docs/
+
+# --- Cursor IDE ---
+.cursor/
+.cursorrules
+.cursorindexingignore
+.cursorignore
+.cursor-tutor/
+
+# --- GitHub Copilot ---
+.github/copilot-instructions.md
+.copilot/
+copilot-*.txt
+
+# --- CodeBuddy (腾讯云) ---
+.codebuddy/
+.codebuddy.json
