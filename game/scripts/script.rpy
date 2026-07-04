@@ -21,6 +21,9 @@
 
         "日常1":
             jump daily_01
+
+        "转折":
+            jump turn_boom
     
 
     stop music fadeout 1.0
