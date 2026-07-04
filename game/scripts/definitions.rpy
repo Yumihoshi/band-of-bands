@@ -8,6 +8,7 @@ define rei = Character("白间 玲")#认真
 define mhk = Character("浅间 美步子")#外向
 
 define band_name = "抛锚乐队"
+define debug = True
 
 # 背景
 image bg 超市 = "background/store.png"
