@@ -12,12 +12,11 @@
 
     # 此处显示各行对话。
 
-    c_new_people "您好，我是乐队新人。是来加入这个乐队的。"
-
-    c_player "我是新人邀请人。欢迎加入乐队！你都会些什么呢？"
-
-    c_new_people "诶嘿~我什么都不会~"
-
+    akr "播放音乐。"
+    play music "bgm/bgm_humor.ogg" fadein 2.0
     # 此处为游戏结尾。
+    akr "好听。"
+    jump daily_01
+    stop music fadeout 1.0
 
     return
