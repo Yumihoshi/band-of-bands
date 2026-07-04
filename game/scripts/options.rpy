@@ -28,6 +28,17 @@ define config.version = "1.0"
 ## 行。
 
 define gui.about = _p("""
+乐队的乐队
+
+【开发团队】
+主策：白鱼\n
+程序：白鱼、绘星\n
+美术：玖、羽毛球\n
+文案：SKewer、白鱼、绘星\n
+音乐音效：洛殀\n
+
+本作品代码遵循 MIT 许可证开源发布。\n
+仓库地址：https://github.com/Yumihoshi/band-of-bands
 """)
 
 
