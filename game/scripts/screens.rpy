@@ -112,10 +112,23 @@ screen say(who, what):
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
 
+    ## 滚轮上滑打开历史记录
+    key "mousedown_4" action If(not main_menu, ShowMenu('history'))
+    ## 滚轮下滑推进对话（绕过键映射，避免历史关闭后事件不响应）
+    key "mousedown_5" action Return()
+
 
 ## 通过 Character 对象使名称框可用于样式化。
 init python:
     config.character_id_prefixes.append('namebox')
+
+## 移除滚轮上移的默认回滚行为，避免与滚轮上滑打开历史冲突
+## 同时移除滚轮下移的键映射，改用 say 屏幕显式处理，避免历史关闭后事件丢失
+init python:
+    if "mousedown_4" in config.keymap['rollback']:
+        config.keymap['rollback'].remove("mousedown_4")
+    if "mousedown_5" in config.keymap['rollforward']:
+        config.keymap['rollforward'].remove("mousedown_5")
 
 style window is default
 style say_label is default
@@ -403,7 +416,7 @@ style main_menu_version:
 ## scroll 参数可以是 None，也可以是 viewport 或 vpgrid。此屏幕旨在与一个或多个子
 ## 屏幕同时使用，这些子屏幕将被嵌入（放置）在其中。
 
-screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+screen game_menu(title, scroll=None, yinitial=0.0, spacing=0, adj=None):
 
     style_prefix "game_menu"
 
@@ -435,6 +448,9 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
                         side_yfill True
 
+                        if adj:
+                            yadjustment adj
+
                         vbox:
                             spacing spacing
 
@@ -452,6 +468,9 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
                         pagekeys True
 
                         side_yfill True
+
+                        if adj:
+                            yadjustment adj
 
                         spacing spacing
 
@@ -880,7 +899,12 @@ screen history():
     ## 避免预缓存此屏幕，因为它可能非常大。
     predict False
 
-    use game_menu(_("历史"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
+    ## 滚动位置追踪，用于检测是否已到底
+    default hist_yadj = ui.adjustment()
+    ## 延迟关闭标记，避免在事件处理中途关闭屏幕导致下一个 wheel down 被吞掉
+    default hist_should_close = False
+
+    use game_menu(_("历史"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing, adj=hist_yadj):
 
         style_prefix "history"
 
@@ -909,6 +933,11 @@ screen history():
 
         if not _history_list:
             label _("尚无对话历史记录。")
+
+    ## 滚轮下滑到底时标记关闭
+    key "mouseup_5" action If(hist_yadj.value >= hist_yadj.range, SetScreenVariable('hist_should_close', True))
+    ## 延迟一帧关闭，确保事件循环完整
+    timer 0.01 action [If(hist_should_close, Return()), SetScreenVariable('hist_should_close', False)] repeat True
 
 
 ## 此代码决定了允许在历史记录屏幕上显示哪些标签。
