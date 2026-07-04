@@ -1,9 +1,13 @@
+# ==============================================================================
+# 角色名
+# ==============================================================================
 define yuka = Character("今若 友歌")#妈妈
 define akr = Character("米野 晶")#内向
 define kanna = Character("卫宫 神奈")#叛逆
 define rei = Character("白间 玲")#认真
 define mhk = Character("浅间 美步子")#外向
 
+define band_name = "抛锚乐队"
 
 # 背景
 image bg 超市 = "background/store.png"
