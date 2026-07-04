@@ -19,6 +19,9 @@
     menu:
         "接下来要测试的章节"
 
+        "邀请":
+            jump memories_band_begin
+
         "日常1":
             jump daily_01
 
