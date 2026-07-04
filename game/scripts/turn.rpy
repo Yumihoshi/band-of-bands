@@ -5,12 +5,13 @@
 
 # 排练中原成员依旧插科打诨，认真系无法认同，阐述自己的想法，再次被忽视，爆了
 label turn_boom:
-    return
+    
+    jump turn_talk
 
 # 事后认真系向外向系理性阐述自己的想法，大家因为梦想太宏大飘渺而浅尝辄止，
 # 没有明确的方向；外向系->认真系：认识到音乐的本质就是以音为乐
 label turn_talk:
-    return
+    jump turn_roadshow
 
 # 解决方式：一场不期而遇的路演live
 # 让认真系明白音乐能带来快乐
