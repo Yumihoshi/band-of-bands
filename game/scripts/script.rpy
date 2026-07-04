@@ -16,7 +16,13 @@
     play music "bgm/bgm_humor.ogg" fadein 2.0
     # 此处为游戏结尾。
     akr "好听。"
-    jump daily_01
+    menu:
+        "接下来要测试的章节"
+
+        "日常1":
+            jump daily_01
+    
+
     stop music fadeout 1.0
 
     return
