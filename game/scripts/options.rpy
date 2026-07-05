@@ -31,7 +31,11 @@ define config.default_fullscreen = True
 ## 行。
 
 define gui.about = _p("""
-乐队的乐队
+乐队的乐队\n\n
+
+抛锚乐队的人员变动通知！！！\n
+从即日起，白间 玲将不再担任抛锚乐队的贝斯手。\n
+人生有梦，各自精彩！\n\n
 
 【开发团队】
 主策：白鱼\n
@@ -41,7 +45,7 @@ define gui.about = _p("""
 音乐音效：洛殀\n
 
 本作品代码遵循 MIT 许可证开源发布。\n
-仓库地址：https://github.com/Yumihoshi/band-of-bands
+仓库地址：{a=https://github.com/Yumihoshi/band-of-bands}链接{/a}
 """)
 
 
