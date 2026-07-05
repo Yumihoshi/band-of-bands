@@ -327,6 +327,8 @@ screen navigation():
 
         textbutton _("画廊") action ShowMenu("gallery")
 
+        textbutton _("原声集") action ShowMenu("ost_player")
+
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## “帮助”对移动设备来说并非必需或相关。

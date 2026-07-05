@@ -52,6 +52,53 @@ init python:
         ("akr smile", "晶·微笑"),
         ("akr timid", "晶·胆怯"),
     ]
+    
+    # 原声集列表（路径 + 显示名）
+    ost_list = [
+        ("bgm/bgm_humor.ogg", "轻松日常"),
+        ("bgm/bgm_peaceful.ogg", "平和时光"),
+        ("bgm/bgm_city pop_01.ogg", "城市流行①"),
+        ("bgm/bgm_city pop_02.ogg", "城市流行②"),
+        ("bgm/bgm_serious.ogg", "紧张时刻"),
+        ("bgm/bgm_live.ogg", "现场演奏"),
+        ("bgm/bgm_hope.ogg", "希望之光"),
+    ]
+
+
+# 原声集播放器
+screen ost_player():
+    tag menu
+    
+    use game_menu(_("原声集"), scroll="viewport"):
+        
+        vbox:
+            xalign 0.5
+            spacing 15
+            
+            for track_path, name in ost_list:
+                
+                frame:
+                    xsize 600
+                    xalign 0.5
+                    padding (20, 12)
+                    
+                    hbox:
+                        spacing 20
+                        xfill True
+                        
+                        text name:
+                            size 22
+                            yalign 0.5
+                            xfill True
+                        
+                        if renpy.music.get_playing("music") == track_path:
+                            textbutton _("■ 停止"):
+                                action Function(renpy.music.stop)
+                                text_size 18
+                        else:
+                            textbutton _("▶ 播放"):
+                                action Function(renpy.music.play, track_path)
+                                text_size 18
 
 
 # 画廊主菜单
@@ -76,6 +123,11 @@ screen gallery():
             textbutton _("角色画廊"):
                 xalign 0.5
                 action ShowMenu("gallery_char")
+                text_size 24
+            
+            textbutton _("原声集"):
+                xalign 0.5
+                action ShowMenu("ost_player")
                 text_size 24
 
 
