@@ -89,6 +89,10 @@ define gui.title_text_size = 75
 define gui.main_menu_background = "background/封面.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
+## 隐藏主界面的游戏名称和版本号
+## 封面图已包含这些信息
+define gui.show_name = False
+
 
 ## 对话 ##########################################################################
 ##
