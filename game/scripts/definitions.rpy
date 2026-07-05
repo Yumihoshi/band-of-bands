@@ -13,6 +13,7 @@ define debug = True
 # 背景
 image bg 商店 = "background/snack_store.png"
 image bg 书店 = "background/bookstore.png"
+image bg 卧室 = "background/bedroom.png"
 image bg 学校走廊 = "background/hallway.png"
 image bg 咖啡馆 = "background/cafe.png"
 image bg 桌椅1 = "background/desk_chair_01.png"
