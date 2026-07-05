@@ -36,9 +36,44 @@ image mhk normal = "images/mhk_normal.png"
 
 #表情差分
 
+# character_action 目录下的动作/表情图片
+# baiyu
+image character_action baiyu action_01 = "images/character_action/baiyu/by_Action_01.png"
+image character_action baiyu action_02 = "images/character_action/baiyu/by_Action_02.png"
+image character_action baiyu normal = "images/character_action/baiyu/by_emotion_normal.png"
+image character_action baiyu puzzle = "images/character_action/baiyu/by_emotion_puzzle.png"
+image character_action baiyu shy = "images/character_action/baiyu/by_emotion_shy.png"
+image character_action baiyu smile = "images/character_action/baiyu/by_emotion_smile.png"
+image character_action baiyu timid = "images/character_action/baiyu/by_emotion_timid.png"
 
+# hx
+image character_action hx idle = "images/character_action/hx/character_hx_idle.png"
+image character_action hx upset = "images/character_action/hx/hx_emotion_upset.png"
+image character_action hx worry = "images/character_action/hx/hx_emotion_worry.png"
 
-# ============================================================
+# ly
+image character_action ly hostile = "images/character_action/ly/ly_emotion_hostile(dishi).png"
+image character_action ly kill_u = "images/character_action/ly/ly_emotion_kill u.png"
+image character_action ly normal = "images/character_action/ly/ly_emotion_normal.png"
+image character_action ly speechless = "images/character_action/ly/ly_emotion_speechless.png"
+
+# sk
+image character_action sk action_01 = "images/character_action/sk/sk_Action_01.png"
+image character_action sk angry = "images/character_action/sk/sk_emotion_angry.png"
+image character_action sk normal = "images/character_action/sk/sk_emotion_normal.png"
+image character_action sk nyjk = "images/character_action/sk/sk_emotion_nyjk.png"
+image character_action sk puzzle = "images/character_action/sk/sk_emotion_puzzle.png"
+image character_action sk smile = "images/character_action/sk/sk_emotion_smile.png"
+
+# ymq
+image character_action ymq action_01 = "images/character_action/ymq/ymq_Action_01.png"
+image character_action ymq angry = "images/character_action/ymq/ymq_emotion_angry.png"
+image character_action ymq at_a_loss = "images/character_action/ymq/ymq_emotion_at a loss.png"
+image character_action ymq excited = "images/character_action/ymq/ymq_emotion_excited.png"
+image character_action ymq foolish_laugh = "images/character_action/ymq/ymq_emotion_foolish-laugh.png"
+image character_action ymq normal = "images/character_action/ymq/ymq_emotion_normal.png"
+image character_action ymq shocked = "images/character_action/ymq/ymq_emotion_shocked.png"
+image character_action ymq upset = "images/character_action/ymq/ymq_emotion_upset.png"# ============================================================
 # 锚点与位置设置
 # ============================================================
 
