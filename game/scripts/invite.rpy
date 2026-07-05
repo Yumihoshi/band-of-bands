@@ -226,7 +226,7 @@ label after_training_day:
     "我们各自收拾好乐器。"
     "和大家告别后，我和晶一起走上了回家的路。"
 
-    play audio "=sfx/sfx_walk.wav"
+    play audio "sfx/sfx_walk.wav"
 
     #场景：回家路上
     scene bg 公园路
@@ -421,7 +421,7 @@ label after_training_day:
 
     play music "bgm/bgm_peaceful.ogg" fadein 1.5
 
-    play audio "=sfx/sfx_door.mp3"
+    play audio "sfx/sfx_door.mp3"
 
     "放学后的走廊。四个人到齐了。"
 
@@ -447,7 +447,7 @@ label after_training_day:
 
     "友歌的声音一如既往地温柔。"
 
-    show mhk smlie at pos4
+    show mhk smile at pos4
 
     mhk "……我们的乐队，其实一直少一个贝斯手对吧？"
 

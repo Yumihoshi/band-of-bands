@@ -29,6 +29,8 @@ image bg 舞台 = "background/stage.jpg"
 image bg 练习室 = "background/practice_room.png"
 image bg 音乐商店 = "background/music_store.png"
 image bg 商场 = "background/shopping_mall.png"
+image bg 教室 = "background/desk_chair_01.png"
+image bg 排练室 = "background/practice_room.png"
 
 
 
@@ -40,6 +42,51 @@ image kanna normal = "images/kanna_normal.png"
 image mhk normal = "images/mhk_normal.png"
 
 #表情差分
+
+# 晶 (akr) - 表情别名（tag=角色名，支持 show akr 表情）
+image akr shy = "images/character_action/akr/by_emotion_shy.png"
+image akr smile = "images/character_action/akr/by_emotion_smile.png"
+image akr happy = "images/character_action/akr/by_emotion_smile.png"
+image akr puzzle = "images/character_action/akr/by_emotion_puzzle.png"
+image akr timid = "images/character_action/akr/by_emotion_timid.png"
+image akr action_01 = "images/character_action/akr/by_Action_01.png"
+image akr action_02 = "images/character_action/akr/by_Action_02.png"
+
+# 玲 (rei) - 表情别名
+image rei idle = "images/character_action/rei/character_hx_idle.png"
+image rei upset = "images/character_action/rei/hx_emotion_upset.png"
+image rei worry = "images/character_action/rei/hx_emotion_worry.png"
+image rei puzzle = "images/character_action/rei/character_hx_idle.png"
+image rei timid = "images/character_action/rei/hx_emotion_worry.png"
+image rei smile = "images/character_action/rei/character_hx_idle.png"
+
+# 神奈 (kanna) - 表情别名
+image kanna hostile = "images/character_action/kanna/ly_emotion_hostile(dishi).png"
+image kanna kill_u = "images/character_action/kanna/ly_emotion_kill u.png"
+image kanna speechless = "images/character_action/kanna/ly_emotion_speechless.png"
+image kanna tsundere = "images/character_action/kanna/ly_emotion_normal.png"
+image kanna puzzle = "images/character_action/kanna/ly_emotion_normal.png"
+image kanna worreid = "images/character_action/kanna/ly_emotion_normal.png"
+
+# 友歌 (yuka) - 表情别名
+image yuka action_01 = "images/character_action/yuka/sk_Action_01.png"
+image yuka angry = "images/character_action/yuka/sk_emotion_angry.png"
+image yuka nyjk = "images/character_action/yuka/sk_emotion_nyjk.png"
+image yuka puzzle = "images/character_action/yuka/sk_emotion_puzzle.png"
+image yuka smile = "images/character_action/yuka/sk_emotion_smile.png"
+image yuka gentle = "images/character_action/yuka/sk_emotion_normal.png"
+
+# 美步子 (mhk) - 表情别名
+image mhk shy = "images/character_action/mhk/ymq_emotion_normal.png"
+image mhk smile = "images/character_action/mhk/ymq_emotion_normal.png"
+image mhk happy = "images/character_action/mhk/ymq_emotion_normal.png"
+image mhk excited = "images/character_action/mhk/ymq_emotion_excited.png"
+image mhk shocked = "images/character_action/mhk/ymq_emotion_shocked.png"
+image mhk upset = "images/character_action/mhk/ymq_emotion_upset.png"
+image mhk angry = "images/character_action/mhk/ymq_emotion_angry.png"
+image mhk at_a_loss = "images/character_action/mhk/ymq_emotion_at a loss.png"
+image mhk foolish_laugh = "images/character_action/mhk/ymq_emotion_foolish-laugh.png"
+image mhk action_01 = "images/character_action/mhk/ymq_Action_01.png"
 
 # character_action 目录下的动作/表情图片（按角色分组）
 # 晶 (akr)
@@ -192,11 +239,11 @@ define bgm_hope = "bgm/bgm_hope.ogg"
 # ==============================================================================
 # 音效
 # ==============================================================================
-define sfx_book = "sfx/sfx_bookl.mp3"
+define sfx_book = "sfx/sfx_book.mp3"
 define sfx_crowd = "sfx/sfx_crowd.mp3"
 define sfx_dengdeng = "sfx/sfx_dengdeng.mp3"
 define sfx_door = "sfx/sfx_door.mp3"
 define sfx_phone = "sfx/sfx_phone.mp3"
-define sfx_school = "sfx/sfx_scholl.mp3"
+define sfx_school = "sfx/sfx_school.mp3"
 define sfx_tip = "sfx/sfx_tip.wav"
 define sfx_walk = "sfx/sfx_walk.wav"

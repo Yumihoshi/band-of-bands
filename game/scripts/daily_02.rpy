@@ -29,13 +29,35 @@ transform right_pos:
     yalign 0.5
     yoffset 300
 
+# 简写位置（兼容 bookstore 节）
+transform left:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.2
+    yalign 0.5
+    yoffset 300
+
+transform center:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.5
+    yalign 0.5
+    yoffset 300
+
+transform right:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.8
+    yalign 0.5
+    yoffset 300
+
 label bookstore:
-    scene bg 回家路上
+    scene bg 公园路
     with fade
 
     "某日的放学后。"
 
-    play music bgm_日常 fadein 1.5
+    play music bgm_peaceful fadein 1.5
 
     show akr normal at left
     with dissolve
@@ -224,11 +246,11 @@ label shopping_mall:
 
 # ========== 场景：咖啡店 ==========
 label coffee_shop:
-    scene bg 咖啡店
+    scene bg 咖啡馆
     with fade
 
     # 播放咖啡店背景音乐
-    play music bgm_cafe fadein 1.0
+    play music bgm_citypop_02 fadein 1.0
 
     # 同时显示所有角色，安排座位
     show mhk normal at left_pos

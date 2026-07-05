@@ -1,7 +1,7 @@
 label meet:
 
     stop music fadeout 1.0
-    play music "bgm/bgm_humor.mp3" fadein 2.0
+    play music "bgm/bgm_humor.ogg" fadein 2.0
 
     scene bg 学校走廊
     with fade
