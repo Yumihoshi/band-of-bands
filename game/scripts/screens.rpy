@@ -325,6 +325,8 @@ screen navigation():
 
         textbutton _("关于") action ShowMenu("about")
 
+        textbutton _("画廊") action ShowMenu("gallery")
+
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## “帮助”对移动设备来说并非必需或相关。

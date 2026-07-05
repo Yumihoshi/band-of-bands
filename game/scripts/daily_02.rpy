@@ -1,13 +1,13 @@
 transform left_pos:
     anchor (0.5, 0.5)
     zoom 0.8
-    xalign 0.1
+    xalign -0.2
     yalign 0.5
     yoffset 300
 transform left_center:
     anchor (0.5, 0.5)
     zoom 0.8
-    xalign 0.3
+    xalign 0.15
     yalign 0.5
     yoffset 300
 transform center_pos:
@@ -19,13 +19,13 @@ transform center_pos:
 transform right_center:
     anchor (0.5, 0.5)
     zoom 0.8
-    xalign 0.7
+    xalign 0.85
     yalign 0.5
     yoffset 300
 transform right_pos:
     anchor (0.5, 0.5)
     zoom 0.8
-    xalign 0.9
+    xalign 1.2
     yalign 0.5
     yoffset 300
 
