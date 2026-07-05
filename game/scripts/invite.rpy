@@ -4,7 +4,6 @@ label memories_band_begin:
     
     # scene bg &学校外
     # with fade
-
     # play music &bgm_日常 fadein 1.5
     # play audio &sfx_人群声
 
@@ -70,6 +69,7 @@ label memories_band_begin:
     # show mhk excited at left
 
     mhk "有了！我们组建一个乐队吧！"
+
     mhk "这样不管分到哪个班，放学后都能聚在一起！"
 
     # show kanna tsundere at right
@@ -84,11 +84,11 @@ label memories_band_begin:
     # show akr shy at farleft
     # with dissolve
 
-    akr "……我之前学过一点键盘。"
+    akr "那个……我之前学过一点键盘。"
 
     # show kanna tsundere at right
 
-    kanna "……啊，也不是不行。正好我一直在学吉他。"
+    kanna "……啊，也不是不行啦。正好我一直在学吉他。"
 
     mhk "那就这么定了！我是吉他主唱！友歌呢？"
 
@@ -121,7 +121,7 @@ label memories_band_begin:
 
     "而我——"
     
-    extend "为什么只有我一个人一个班！！！"
+    extend "为什么只有我一个人一个班！！！！！！"
 
     # show mhk normal at center
     # with dissolve
@@ -132,6 +132,18 @@ label memories_band_begin:
     jump after_training_day
 
 label after_training_day:
+
+    scene bg &教室
+
+    show rei normal at left
+
+    show mhk normal at right
+
+    mhk "玲今天也要去乐队吗？"
+
+    rei "嗯。我们乐队几乎每天都有训练。"
+
+    mhk "真是辛苦呢。明天见了。"
 
     # scene bg &排练室
     # with fade
@@ -214,6 +226,7 @@ label after_training_day:
 
     #场景：回家路上
     # scene bg &回家路上
+    # with fade
 
     "晶和我家挨得很近，所以经常一起走。"
 
@@ -308,136 +321,192 @@ label after_training_day:
 
     "是玲发来的消息。"
 
-    # ---- 消息演出 ----
+    rei "美步子，我退出了之前的乐队。"
 
-    window hide
+    # show mhk shocked at center
 
-    show screen phone_message("白间玲", "美步子，我退出了之前的乐队。")
-
-    pause 3.0
-
-    hide screen phone_message
-
-    window show
-
-    show mhk thinking at center
-
-    mhk "……诶？"
+    mhk "……诶？？？？？"
 
     "我一下子坐直了身子。"
+
+    # show mhk normal at center
 
     mhk "退出了……？"
 
     "虽然平时玲偶尔会提到乐队里的矛盾，但我没想到真的会走到这一步。"
 
-    play audio se_phone
-    pause 0.5
+    rei "原因说来话长。"
+    
+    extend "总之，我和他们在音乐理念上合不来。"
 
-    window hide
+    rei "不是什么大事。只是一部分的人际关系啦。"
 
-    show screen phone_message("白间玲", "原因说来话长。\n总之，我和他们在音乐理念上合不来。")
+    rei "不过我早就说过主唱要找女孩子啦!"
 
-    pause 3.0
+    # show mhk shocked at center
 
-    hide screen phone_message
+    mhk "诶？为什么这么说呢？"
 
-    play audio se_phone
-    pause 0.5
-
-    show screen phone_message("白间玲", "不是什么大事。\n只是觉得，与其勉强在一起，不如早点放手。")
-
-    pause 3.0
-
-    hide screen phone_message
-
-    window show
-
-    "玲的文字一如既往地平静。"
-    "但我知道，做出这个决定一定不容易。"
-
-    show mhk normal at center
-
-    "我看着天花板想了一会儿。"
-    "然后，一个念头冒了出来。"
+    rei "美步子你想啊，一个乐队有男有女的话，就会因为男女关系纠葛不清而解散了！"
 
     # 无意义选项
     menu:
-        "（……）"
+        mhk "……"
 
-        "等等，先冷静想一想。":
+        "原来是这样吗？":
+            mhk "原来是这样吗？"
             pass
 
-        "可是，这不是很自然的事情吗？":
+        "这就是前辈留的教诲吗？":
+            mhk "这就是前辈留的教诲吗？"
             pass
 
-        "深呼吸一下。":
+        "那可真是太坏了！":
+            mhk "那可真是太坏了！"
             pass
+    
+    rei "也好，与其勉强在一起，不如早点放手。"
 
-    "我深吸一口气，打字。"
+    rei "不过呢，看来我要组个新乐队了!"
 
-    play audio se_phone
-    pause 0.5
+    # show mhk normal at center
 
-    window hide
+    mhk "玲，你要不要来Anchor。"
 
-    show screen phone_message("浅间美步子", "玲，你要不要来Anchor？\n我们的贝斯手的位置，一直空着呢。")
-
-    pause 3.0
-
-    hide screen phone_message
-
-    window show
-
-    show mhk excited at center
+    extend "我们的贝斯手的位置，一直空着呢。"
 
     "手指按下发送键的那一刻，心跳加速了。"
     "我觉得这是个好主意。"
     "但我也知道，这不是我一个人能决定的事。"
 
-    play audio se_phone
-    pause 0.5
+    rei "……你是认真的吗？"
 
-    window hide
+    # show mhk excited at center
 
-    show screen phone_message("白间玲", "……你是认真的吗？")
+    mhk "当然！"
+    
+    extend "不过我要跟其他三个人商量一下……"
 
-    pause 2.0
+    rei "…………好的。"
+    
+    extend "不管结果如何，谢谢你，美步子。"
 
-    hide screen phone_message
-
-    play audio se_phone
-    pause 0.5
-
-    show screen phone_message("浅间美步子", "认真的！\n不过我要跟其他三个人商量一下。\n明天给你答复！")
-
-    pause 3.0
-
-    hide screen phone_message
-
-    play audio se_phone
-    pause 0.5
-
-    show screen phone_message("白间玲", "……好的。\n不管结果如何，谢谢你，美步子。")
-
-    pause 3.0
-
-    hide screen phone_message
-
-    window show
-
-    show mhk smile at center
+    # show mhk smile at center
 
     mhk "交给我吧！"
 
-    "放下手机，我抱住了一个靠枕。"
-    "明天要怎么说呢……"
+    "放下手机。明天要怎么说呢……"
 
     "友歌大概会温柔地同意。"
     "神奈可能会有意见……但她骨子里是个好人。"
     "晶的话……唔，她可能需要一点时间适应新人。"
 
     "不过没关系。"
-    "我们是Anchor啊。"
     "我们会好好处理这件事的。"
 
-    stop music fadeout 2.0
+    # stop music fadeout 2.0
+
+    #加人提案，场景：纯黑
+
+    scene black
+    with fade
+
+    "第二天。"
+
+    #场景：学校走廊
+
+    scene bg &学校走廊
+    with fade
+
+    play music &bgm_日常 fadein 1.5
+
+    play audio &sfx_door
+
+    "放学后的走廊。四个人到齐了。"
+
+    show yuka normal at center
+    with dissolve
+
+    show kanna normal at left
+    with dissolve
+
+    show akr normal at farleft
+    with dissolve
+
+    show mhk normal at right
+    with dissolve
+
+    "我站在三个人面前。"
+
+    mhk "那个……米娜桑，我有件事想说。"
+
+    show yuka smile at center
+
+    yuka "嗯，说吧。"
+
+    "友歌的声音一如既往地温柔。"
+
+    show mhk smlie at right
+
+    mhk "……我们的乐队，其实一直少一个贝斯手对吧？"
+
+    show kanna puzzle at left
+
+    kanna "美步子想找人帮忙拿外卖了吗？"
+
+    akr "贝斯……还是很重要的。"
+
+    kanna "比如贝斯不去拿外卖的话，我们今晚吃什么？"
+
+    yuka "美步子，你已经有人选了吧？"
+
+    "不愧是友歌,一如既往的敏锐呢！"
+
+    show mhk normal at right
+
+    mhk "嗯……是我班上的同学，白间玲。"
+
+    show kanna normal at left
+
+    kanna "……白间？我没听说过。"
+
+    yuka "白间同学吗，我高一和她同班来着。"
+    
+    yuka "不过我们没什么交集就是了。"
+
+    "这我倒是不奇怪。"
+
+    show akr shy at farleft
+
+    akr "美步子，你觉得她怎么样呢？"
+
+    mhk "她是个很认真的人！对音乐非常有热情。而且……"
+
+    mhk "而且我觉得，她如果加入的话，我们的演奏会变得更好。"
+
+    akr "没有贝斯，低音部分一直有些薄弱呢。"
+
+    show akr normal at farleft
+
+    yuka "……美步子推荐的人，应该没问题的。"
+
+    show kanna worreid at left
+
+    kanna "……可是，我们四个人一直在一起的。加一个外人进来——"
+
+    show yuka normal at center
+
+    yuka "那么我们先见见这个人，然后再做决定吧。」"
+
+    show mhk smile at right
+
+    mhk "嗯！这样最好！"
+
+    show akr shy at farleft
+
+    akr "……我也觉得。先见面看看。"
+
+    show kanna normal at left
+
+    kanna "……哼。好吧，既然大家都这么说的话。"
+
