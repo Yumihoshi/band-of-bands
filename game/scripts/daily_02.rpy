@@ -190,3 +190,5 @@ label bookstore:
 label shopping_mall:
     jump coffee_shop
 label coffee_shop:
+
+    return

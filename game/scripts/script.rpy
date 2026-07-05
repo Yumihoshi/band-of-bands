@@ -1,34 +1,28 @@
-﻿label start:
+﻿# ==============================================================================
+# 剧本入口
+# 剧情线：外向邀请认真加入 → 原成员反应 → 日常 → 矛盾 → 和解
+# ==============================================================================
 
-    # 显示一个背景。此处默认显示占位图，但您也可以在图片目录添加一个文件
-    # （命名为 bg room.png 或 bg room.jpg）来显示。
+label start:
 
-    scene bg room
+    scene black with dissolve
 
-    # 显示角色立绘。此处使用了占位图，但您也可以在图片目录添加命名为
-    # eileen happy.png 的文件来将其替换掉。
+    # 第1章：外向邀请认真加入乐队
+    call memories_band_begin
 
-    show eileen happy
+    # 第2章：原成员对新人加入的反应
+    call meet
 
-    # 此处显示各行对话。
+    # 第3章：日常1 & 首次排练
+    call daily_01
 
-    akr "播放音乐。"
-    play music "bgm/bgm_humor.ogg" fadein 2.0
-    # 此处为游戏结尾。
-    akr "好听。"
-    menu:
-        "接下来要测试的章节"
+    # 第4章：日常2（书店买书 → 逛商场 → 咖啡厅）
+    call bookstore
 
-        "邀请":
-            jump memories_band_begin
+    # 第5章：矛盾（转折）
+    call turn_boom
 
-        "日常1":
-            jump daily_01
-
-        "转折":
-            jump turn_boom
-    
-
-    stop music fadeout 1.0
+    # 第6章：和解（包饺子/寿司🍣）
+    # TODO: 需要补充
 
     return
