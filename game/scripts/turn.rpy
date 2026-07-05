@@ -8,6 +8,7 @@
 label turn_boom:
     # 前面练习了很多次，排练提前
     scene black with dissolve
+    show mhk normal at pos3
     # 塑造元气笨蛋 & 社交依赖
     mhk "啊——又一天结束了，排练的日子可真辛苦啊。"
     mhk "终于可以好好休息了，嘿嘿~"
@@ -35,8 +36,7 @@ label turn_boom:
     extend "除了数学、国语、物理、化学、生物、政治、地理、历史、体育……"
     rei "……"
     mhk "好梦啦，熬夜会变成漏了气的汽水的。"
-    if debug:
-        "（挂断电话）"
+    play sound sfx_tip
     mhk "哈——好困。"
     "我躺在床上，闭上眼睛，回想着过往。"
     "真庆幸玲那家伙没有当上学生会会长，不然连音乐老师都会被迫变成她那样的人。"
@@ -51,6 +51,8 @@ label turn_boom:
     # 
     # 塑造压抑的氛围和什么东西即将爆发的感觉
     scene bg 练习室 with dissolve
+    show mhk normal at pos2
+    show rei normal at pos3
     "练习室的窗帘紧拉着，早晨炽热的阳光从窗帘的缝隙中透出，空气十分闷热。"
     "我迈着有力的步伐走向窗口，拉开窗帘，大口呼吸着新鲜空气。"
     mhk "啦啦啦，新的一天就应该从打开所有的窗帘开始，还有窗户——"
@@ -74,6 +76,10 @@ label turn_boom:
     extend "练习实在是好困啊——"
     # 大家到齐，开始练习
     play sound sfx_door
+    show yuka normal at pos1 with dissolve
+    show kanna normal at pos4 with dissolve
+    show akr normal at pos2 with dissolve
+    show mhk normal at pos_center with dissolve
     yuka "玲，美步子，早上好~今天这么早来练习啊。"
     rei "早上好。"
     # 塑造团宠
@@ -138,6 +144,7 @@ label turn_boom:
     rei "我只是想…和大家一起去武道馆办一次live，哪怕最终只能在小一些的live house演出，我也想和大家一起。"
     rei "我已经受够了，反正有没有贝斯，你们都能继续演奏，那不如一走了之！"
     play sound sfx_door
+    hide rei with dissolve
     kanna "终于走了，贝斯手本就是可有可无的存在。"
     yuka "神奈！"
     akr "玲…"
@@ -149,6 +156,7 @@ label turn_boom:
     extend "就能给乐队带来改变。"
     "我如此坚信着…但我还是没有抓住，玲的手就这样从我手中滑落。"
 
+    hide all with dissolve
     jump turn_talk
 
 # 事后认真系向外向系理性阐述自己的想法，
@@ -160,6 +168,7 @@ label turn_talk:
     # 但是老团的日常回不到以前快乐的氛围，比如突然的沉思之类的
     # 美步子动机：1. 自身元气属性想让大家展露笑容 2. 觉得玲是乐队必不可缺的成员
     scene bg 公园路 with dissolve
+    show mhk normal at pos3
     play music bgm_peaceful
     "从那以后，大家回到了日常的练习中，但我总是心不在焉。"
     "要是大家能告诉我玲回来了就好了…"
@@ -176,6 +185,10 @@ label turn_talk:
     mhk "好，到时候见啦~"
     # 试图维护昔日开心随性的氛围，但总有瑕疵
     scene bg 咖啡馆 with dissolve
+    show yuka normal at pos1
+    show kanna normal at pos4
+    show akr normal at pos2
+    show mhk normal at pos3
     play music bgm_citypop_02
     yuka "美步子，这边这边~这样就都到齐了，真是太好了。"
     kanna "我先说好，我可不是因为想联系上玲才来的。"
@@ -197,6 +210,8 @@ label turn_talk:
     "玲就在那里，那个我们相遇的路口。"
 
     scene bg 公园路 with dissolve
+    show mhk normal at pos2
+    show rei normal at pos3
     play music bgm_serious
     # 玲和美步子谈心，了解到各自所需，打开心结
     mhk "玲——你果然还是在这里啊。"
@@ -218,6 +233,7 @@ label turn_talk:
     play music bgm_hope
     mhk "对了，下个月就是校园文化祭了，我们一起去吧。"
     rei "……你真是，一点都没变。"
+    hide all with dissolve
     jump turn_roadshow
 
 # 解决方式：一场不期而遇的路演live（美步子分别邀请玲和其余三人，但不告诉互相要去）
@@ -229,6 +245,7 @@ label turn_roadshow:
     # 校园文化祭当天，美步子的千层套路
     # 主打一个坑蒙拐骗（划掉）把大家强行凑齐
     scene bg 商店 with dissolve
+    show character_action mhk excited at pos3
     play sound sfx_crowd
     play music bgm_humor
     "章鱼小丸子！炒面！还有超大的棉花糖！"
@@ -237,6 +254,9 @@ label turn_roadshow:
 
     if debug:
         "（不远处，神奈、友歌和晶走了过来）"
+    show yuka normal at pos1 with dissolve
+    show kanna normal at pos4 with dissolve
+    show akr normal at pos2 with dissolve
     yuka "美步子——这里这里！"
     kanna "真是的，大热天非要把人叫出来，要是没有好吃的限定甜点我绝对饶不了你。"
     akr "那个……文化祭的人真的好多啊……有点挤。"
@@ -245,6 +265,7 @@ label turn_roadshow:
     "就在这时，一个熟悉的身影出现在了约定的喷泉广场前。"
     if debug:
         "（玲登场，大家面面相觑）"
+    show rei normal at pos3 with dissolve
     rei "美步子，我到了。你说有很重要的东西要给我看……"
     rei "诶？"
     yuka "啊，是玲！"
@@ -271,6 +292,11 @@ label turn_roadshow:
 
     # 爆点3：美步子一转攻势，赶鸭子上架
     scene bg 舞台 with dissolve
+    show yuka normal at pos1
+    show akr normal at pos2
+    show mhk normal at pos_center
+    show rei normal at pos3
+    show kanna normal at pos4
     "台下不知什么时候已经围了一圈人，好奇地打量着我们这群看起来像是被临时绑架上台的倒霉蛋。"
     kanna "啧……烦死了，看什么看啊！"
     "神奈虽然嘴上抱怨着，但身体还是很诚实地背起了吉他，顺手拨了个极具攻击性的和弦。"
@@ -333,4 +359,5 @@ label turn_roadshow:
     "接下来……就是要扬帆起航了！"
 
     stop music fadeout 3.0
+    hide all with dissolve
     return

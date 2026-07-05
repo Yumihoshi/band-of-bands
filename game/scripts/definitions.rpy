@@ -38,44 +38,46 @@ image mhk normal = "images/mhk_normal.png"
 
 # character_action 目录下的动作/表情图片（按角色分组）
 # 晶 (akr)
-image character_action akr action_01 = "images/character_action/baiyu/by_Action_01.png"
-image character_action akr action_02 = "images/character_action/baiyu/by_Action_02.png"
-image character_action akr normal = "images/character_action/baiyu/by_emotion_normal.png"
-image character_action akr puzzle = "images/character_action/baiyu/by_emotion_puzzle.png"
-image character_action akr shy = "images/character_action/baiyu/by_emotion_shy.png"
-image character_action akr smile = "images/character_action/baiyu/by_emotion_smile.png"
-image character_action akr timid = "images/character_action/baiyu/by_emotion_timid.png"
+image character_action akr action_01 = "images/character_action/akr/by_Action_01.png"
+image character_action akr action_02 = "images/character_action/akr/by_Action_02.png"
+image character_action akr normal = "images/character_action/akr/by_emotion_normal.png"
+image character_action akr puzzle = "images/character_action/akr/by_emotion_puzzle.png"
+image character_action akr shy = "images/character_action/akr/by_emotion_shy.png"
+image character_action akr smile = "images/character_action/akr/by_emotion_smile.png"
+image character_action akr timid = "images/character_action/akr/by_emotion_timid.png"
 
 # 玲 (rei)
-image character_action rei idle = "images/character_action/hx/character_hx_idle.png"
-image character_action rei upset = "images/character_action/hx/hx_emotion_upset.png"
-image character_action rei worry = "images/character_action/hx/hx_emotion_worry.png"
+image character_action rei idle = "images/character_action/rei/character_hx_idle.png"
+image character_action rei upset = "images/character_action/rei/hx_emotion_upset.png"
+image character_action rei worry = "images/character_action/rei/hx_emotion_worry.png"
 
 # 神奈 (kanna)
-image character_action kanna hostile = "images/character_action/ly/ly_emotion_hostile(dishi).png"
-image character_action kanna kill_u = "images/character_action/ly/ly_emotion_kill u.png"
-image character_action kanna normal = "images/character_action/ly/ly_emotion_normal.png"
-image character_action kanna speechless = "images/character_action/ly/ly_emotion_speechless.png"
+image character_action kanna hostile = "images/character_action/kanna/ly_emotion_hostile(dishi).png"
+image character_action kanna kill_u = "images/character_action/kanna/ly_emotion_kill u.png"
+image character_action kanna normal = "images/character_action/kanna/ly_emotion_normal.png"
+image character_action kanna speechless = "images/character_action/kanna/ly_emotion_speechless.png"
 
 # 友歌 (yuka)
-image character_action yuka action_01 = "images/character_action/sk/sk_Action_01.png"
-image character_action yuka angry = "images/character_action/sk/sk_emotion_angry.png"
-image character_action yuka normal = "images/character_action/sk/sk_emotion_normal.png"
-image character_action yuka nyjk = "images/character_action/sk/sk_emotion_nyjk.png"
-image character_action yuka puzzle = "images/character_action/sk/sk_emotion_puzzle.png"
-image character_action yuka smile = "images/character_action/sk/sk_emotion_smile.png"
+image character_action yuka action_01 = "images/character_action/yuka/sk_Action_01.png"
+image character_action yuka angry = "images/character_action/yuka/sk_emotion_angry.png"
+image character_action yuka normal = "images/character_action/yuka/sk_emotion_normal.png"
+image character_action yuka nyjk = "images/character_action/yuka/sk_emotion_nyjk.png"
+image character_action yuka puzzle = "images/character_action/yuka/sk_emotion_puzzle.png"
+image character_action yuka smile = "images/character_action/yuka/sk_emotion_smile.png"
 
 # 美步子 (mhk)
-image character_action mhk action_01 = "images/character_action/ymq/ymq_Action_01.png"
-image character_action mhk angry = "images/character_action/ymq/ymq_emotion_angry.png"
-image character_action mhk at_a_loss = "images/character_action/ymq/ymq_emotion_at a loss.png"
-image character_action mhk excited = "images/character_action/ymq/ymq_emotion_excited.png"
-image character_action mhk foolish_laugh = "images/character_action/ymq/ymq_emotion_foolish-laugh.png"
-image character_action mhk normal = "images/character_action/ymq/ymq_emotion_normal.png"
-image character_action mhk shocked = "images/character_action/ymq/ymq_emotion_shocked.png"
-image character_action mhk upset = "images/character_action/ymq/ymq_emotion_upset.png"# ============================================================
+image character_action mhk action_01 = "images/character_action/mhk/ymq_Action_01.png"
+image character_action mhk angry = "images/character_action/mhk/ymq_emotion_angry.png"
+image character_action mhk at_a_loss = "images/character_action/mhk/ymq_emotion_at a loss.png"
+image character_action mhk excited = "images/character_action/mhk/ymq_emotion_excited.png"
+image character_action mhk foolish_laugh = "images/character_action/mhk/ymq_emotion_foolish-laugh.png"
+image character_action mhk normal = "images/character_action/mhk/ymq_emotion_normal.png"
+image character_action mhk shocked = "images/character_action/mhk/ymq_emotion_shocked.png"
+image character_action mhk upset = "images/character_action/mhk/ymq_emotion_upset.png"
+
+# =============================================================
 # 锚点与位置设置
-# ============================================================
+# =============================================================
 
 transform pos1:
     anchor (0.5, 0.5)
@@ -108,6 +110,14 @@ transform pos4:
     xalign 0.875
     yalign 0.50
     xoffset 180
+    yoffset 300
+
+# 中间位置（用于第5人，或双人对话的主角位）
+transform pos_center:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.5
+    yalign 0.50
     yoffset 300
 
 # ==============================================================================
