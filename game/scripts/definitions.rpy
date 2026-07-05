@@ -11,7 +11,7 @@ define band_name = "抛锚乐队"
 define debug = True
 
 # 背景
-image bg 便利店 = "background/snack_store.png"
+image bg 商店 = "background/snack_store.png"
 image bg 书店 = "background/bookstore.png"
 image bg 学校走廊 = "background/hallway.png"
 image bg 咖啡馆 = "background/cafe.png"
@@ -21,15 +21,16 @@ image bg 桌椅3 = "background/desk_chair_03.png"
 image bg 桌椅4 = "background/desk_chair_04.png"
 image bg 公园路 = "background/street_park.png"
 image bg 河边 = "background/street_river.png"
-image bg 商店 = "background/store.png"
 image bg 舞台 = "background/stage.png"
+image bg 音乐商店 = "background/music_store.png"
+image bg 商场 = "background/shopping_mall.png"
 
 # 角色立绘
-image rei_normal = "images/rei_normal.png"
-image akr_normal = "images/akr_normal.png"
-image yuka_normal = "images/yuka_normal.png"
-image kanna_normal = "images/kanna_normal.png"
-image mhk_normal = "images/mhk_normal.png"
+image rei normal = "images/rei_normal.png"
+image akr normal = "images/akr_normal.png"
+image yuka normal = "images/yuka_normal.png"
+image kanna normal = "images/kanna_normal.png"
+image mhk normal = "images/mhk_normal.png"
 
 #表情差分
 
@@ -44,8 +45,33 @@ transform pos1:
     zoom 0.8
     xalign 0.125
     yalign 0.50
+    xoffset -180
     yoffset 300
 
+
+transform pos2:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.375
+    yalign 0.50
+    xoffset -100
+    yoffset 300
+
+transform pos3:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.625
+    yalign 0.50
+    xoffset 100
+    yoffset 300
+
+transform pos4:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.875
+    yalign 0.50
+    xoffset 180
+    yoffset 300
 
 # ==============================================================================
 # 音乐
@@ -69,24 +95,3 @@ define sfx_phone = "sfx/sfx_phone.mp3"
 define sfx_school = "sfx/sfx_scholl.mp3"
 define sfx_tip = "sfx/sfx_tip.wav"
 define sfx_walk = "sfx/sfx_walk.wav"
-
-transform pos2:
-    anchor (0.5, 0.5)
-    zoom 0.8
-    xalign 0.375
-    yalign 0.50
-    yoffset 300
-
-transform pos3:
-    anchor (0.5, 0.5)
-    zoom 0.8
-    xalign 0.625
-    yalign 0.50
-    yoffset 300
-
-transform pos4:
-    anchor (0.5, 0.5)
-    zoom 0.8
-    xalign 0.875
-    yalign 0.50
-    yoffset 300
