@@ -14,7 +14,6 @@ init python:
         ("bg 桌椅1", "桌椅1"),
         ("bg 桌椅2", "桌椅2"),
         ("bg 桌椅3", "桌椅3"),
-        ("bg 桌椅4", "桌椅4"),
         ("bg 公园路", "公园路"),
         ("bg 河边", "河边"),
         ("bg 舞台", "舞台"),
@@ -85,7 +84,7 @@ screen gallery_bg():
     
     use game_menu(_("背景画廊"), scroll="viewport"):
         
-        grid 4 5:
+        grid 4 4:
             spacing 15
             xalign 0.5
             
@@ -144,9 +143,16 @@ screen gallery_char():
 # 全屏查看
 screen gallery_view(gallery_img, gallery_title):
     
-    add gallery_img:
-        xalign 0.5 yalign 0.5
-        fit "contain"
+    # 点击图片任意位置关闭预览
+    button:
+        xfill True
+        yfill True
+        
+        action Hide("gallery_view")
+        
+        add gallery_img:
+            xalign 0.5 yalign 0.5
+            fit "contain"
     
     # 顶部返回按钮
     frame:
@@ -159,7 +165,7 @@ screen gallery_view(gallery_img, gallery_title):
             spacing 20
             
             textbutton _("← 返回"):
-                action Return()
+                action Hide("gallery_view")
                 text_size 22
             
             text gallery_title:
