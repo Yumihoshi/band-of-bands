@@ -30,6 +30,7 @@ image bg 音乐商店 = "background/music_store.png"
 image bg 商场 = "background/shopping_mall.png"
 image bg 教室 = "background/desk_chair_01.png"
 image bg 排练室 = "background/practice_room.png"
+image bg people = "background/people.png"
 
 
 

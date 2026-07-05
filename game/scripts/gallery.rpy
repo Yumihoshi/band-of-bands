@@ -22,6 +22,7 @@ init python:
         ("bg 商场", "商场"),
         ("bg 教室", "教室"),
         ("bg 排练室", "排练室"),
+        ("bg people", "people"),
     ]
     
     # 角色立绘画廊列表
@@ -84,29 +85,29 @@ screen gallery_bg():
     
     use game_menu(_("背景画廊"), scroll="viewport"):
         
-        grid 4 4:
-            spacing 15
-            xalign 0.5
-            
-            for img, name in gallery_bg_list:
+            grid 4 5:
+                spacing 15
+                xalign 0.5
                 
-                button:
-                    xsize 280
-                    ysize 158
+                for img, name in gallery_bg_list:
                     
-                    action Show("gallery_view", gallery_img=img, gallery_title=name, is_char=False)
-                    
-                    add img:
+                    button:
                         xsize 280
                         ysize 158
-                        fit "cover"
-                    
-                    text name:
-                        align (0.5, 1.0)
-                        yoffset -5
-                        size 16
-                        color "#ffffff"
-                        outlines [(2, "#000000", 0, 0)]
+                        
+                        action Show("gallery_view", gallery_img=img, gallery_title=name, is_char=False)
+                        
+                        add img:
+                            xsize 280
+                            ysize 158
+                            fit "cover"
+                        
+                        text name:
+                            align (0.5, 1.0)
+                            yoffset -5
+                            size 16
+                            color "#ffffff"
+                            outlines [(2, "#000000", 0, 0)]
 
 
 # 角色画廊
