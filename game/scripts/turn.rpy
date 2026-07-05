@@ -7,7 +7,7 @@
 # 阐述自己的想法，再次被忽视，爆了
 label turn_boom:
     # 前面练习了很多次，排练提前
-    scene black with dissolve
+    scene bg 卧室 with dissolve
     show mhk normal at pos_center
     # 塑造元气笨蛋 & 社交依赖
     mhk "啊——又一天结束了，排练的日子可真辛苦啊。"

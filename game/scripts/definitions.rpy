@@ -13,6 +13,10 @@ define debug = True
 # 背景
 image bg 商店 = "background/snack_store.png"
 image bg 书店 = "background/bookstore.png"
+image bg 卧室:
+    "background/bedroom.png"
+    xalign 0.5 yalign 0.5
+    xsize 1920 ysize 1080
 image bg 学校走廊 = "background/hallway.png"
 image bg 咖啡馆 = "background/cafe.png"
 image bg 桌椅1 = "background/desk_chair_01.png"
@@ -25,6 +29,7 @@ image bg 舞台 = "background/stage.jpg"
 image bg 练习室 = "background/practice_room.png"
 image bg 音乐商店 = "background/music_store.png"
 image bg 商场 = "background/shopping_mall.png"
+
 
 
 # 角色立绘
@@ -84,16 +89,13 @@ transform pos1:
     zoom 0.8
     xalign 0.125
     yalign 0.50
-    xoffset -180
     yoffset 300
-
 
 transform pos2:
     anchor (0.5, 0.5)
     zoom 0.8
     xalign 0.375
     yalign 0.50
-    xoffset -100
     yoffset 300
 
 transform pos3:
@@ -101,7 +103,6 @@ transform pos3:
     zoom 0.8
     xalign 0.625
     yalign 0.50
-    xoffset 100
     yoffset 300
 
 transform pos4:
@@ -109,8 +110,29 @@ transform pos4:
     zoom 0.8
     xalign 0.875
     yalign 0.50
-    xoffset 180
     yoffset 300
+
+transform at_left:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.3
+    yalign 0.50
+    yoffset 300
+
+transform at_center:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.5
+    yalign 0.50
+    yoffset 300
+
+transform at_right:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.7
+    yalign 0.50
+    yoffset 300
+
 
 # 中间位置（用于第5人，或双人对话的主角位）
 transform pos_center:
