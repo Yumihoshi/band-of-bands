@@ -21,7 +21,7 @@ image bg 桌椅3 = "background/desk_chair_03.png"
 image bg 桌椅4 = "background/desk_chair_04.png"
 image bg 公园路 = "background/street_park.png"
 image bg 河边 = "background/street_river.png"
-image bg 舞台 = "background/stage.png"
+image bg 舞台 = "background/stage.jpg"
 image bg 练习室 = "background/practice_room.png"
 image bg 音乐商店 = "background/music_store.png"
 image bg 商场 = "background/shopping_mall.png"
@@ -118,6 +118,42 @@ transform pos_center:
     zoom 0.8
     xalign 0.5
     yalign 0.50
+    yoffset 300
+
+# 五人站位（从远左到远右均匀分布）
+transform stage_leftmost:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.08
+    yalign 0.5
+    yoffset 300
+
+transform stage_left:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.27
+    yalign 0.5
+    yoffset 300
+
+transform stage_center:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.5
+    yalign 0.5
+    yoffset 300
+
+transform stage_right:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.73
+    yalign 0.5
+    yoffset 300
+
+transform stage_rightmost:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.92
+    yalign 0.5
     yoffset 300
 
 # ==============================================================================

@@ -8,7 +8,7 @@
 label turn_boom:
     # 前面练习了很多次，排练提前
     scene black with dissolve
-    show mhk normal at pos3
+    show mhk normal at pos_center
     # 塑造元气笨蛋 & 社交依赖
     mhk "啊——又一天结束了，排练的日子可真辛苦啊。"
     mhk "终于可以好好休息了，嘿嘿~"
@@ -36,7 +36,6 @@ label turn_boom:
     extend "除了数学、国语、物理、化学、生物、政治、地理、历史、体育……"
     rei "……"
     mhk "好梦啦，熬夜会变成漏了气的汽水的。"
-    play sound sfx_tip
     mhk "哈——好困。"
     "我躺在床上，闭上眼睛，回想着过往。"
     "真庆幸玲那家伙没有当上学生会会长，不然连音乐老师都会被迫变成她那样的人。"
@@ -292,11 +291,11 @@ label turn_roadshow:
 
     # 爆点3：美步子一转攻势，赶鸭子上架
     scene bg 舞台 with dissolve
-    show yuka normal at pos1
-    show akr normal at pos2
-    show mhk normal at pos_center
-    show rei normal at pos3
-    show kanna normal at pos4
+    show yuka normal at stage_leftmost
+    show akr normal at stage_left
+    show mhk normal at stage_center
+    show rei normal at stage_right
+    show kanna normal at stage_rightmost
     "台下不知什么时候已经围了一圈人，好奇地打量着我们这群看起来像是被临时绑架上台的倒霉蛋。"
     kanna "啧……烦死了，看什么看啊！"
     "神奈虽然嘴上抱怨着，但身体还是很诚实地背起了吉他，顺手拨了个极具攻击性的和弦。"
