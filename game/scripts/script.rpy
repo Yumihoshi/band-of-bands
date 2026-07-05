@@ -6,9 +6,6 @@
 label start:
 
     scene black with dissolve
-
-    call turn_boom
-
     # 第1章：外向邀请认真加入乐队
     call memories_band_begin
 
