@@ -169,6 +169,7 @@ label daily_01:
     "友歌坐到了鼓凳上，晶在键盘前调整着音色，神奈把吉他接上音箱。"
     "玲的贝斯斜挎在身前，姿势端正得像是要上台演出。"
 
+    # 美步子 换normal表情
     mhk "咳咳,上周给玲展示的新歌,大家先试着合一遍吧。"
 
     # 音乐切换：轻快 → 排练 live 感
@@ -194,6 +195,7 @@ label daily_01:
     hide rei
     show character_action rei upset at pos4
     with dissolve
+    #音乐停止
 
     rei "……副歌的节奏，鼓和吉他没对上。"
 
@@ -220,7 +222,7 @@ label daily_01:
     show character_action kanna speechless at pos1
     with dissolve
 
-    # 神奈：不悦、皱眉
+    # 神奈：换不悦、皱眉表情
     kanna "……第一次练习，差不多就行了吧。"
 
     # 美步子打圆场：pos1，替换神奈
