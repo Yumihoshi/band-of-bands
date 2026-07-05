@@ -8,11 +8,15 @@
 label turn_boom:
     # 前面练习了很多次，排练提前
     scene bg 卧室 with dissolve
-    show mhk normal at pos_center
+    show character_action mhk excited at pos_center
     # 塑造元气笨蛋 & 社交依赖
     mhk "啊——又一天结束了，排练的日子可真辛苦啊。"
     mhk "终于可以好好休息了，嘿嘿~"
+    hide character_action mhk with dissolve
+    show character_action mhk action_01 at pos_center with dissolve
     mhk "软乎乎的被窝，我来啦~"
+    hide character_action mhk with dissolve
+    show character_action mhk excited at pos_center with dissolve
     "呼——，好舒服啊~大概谁都不会拒绝被窝的邀请吧。"
     "简直像是掉入了玲的怀抱一样。"
     "玲——"
@@ -31,12 +35,16 @@ label turn_boom:
     mhk "有…有啦，我刚刚听完，现在正准备睡觉呢。"
     rei "哎——之前也说了很多遍了，你到底有没有认真对待啊。"
     rei "稍微…多用点心啊。"
+    hide character_action mhk with dissolve
+    show character_action mhk upset at pos_center with dissolve
     mhk "呜…知道了啦。"
     mhk "不过我要是想认真的话，什么东西都能学会的。\n"
     extend "除了数学、国语、物理、化学、生物、政治、地理、历史、体育……"
     rei "……"
     mhk "好梦啦，熬夜会变成漏了气的汽水的。"
     mhk "哈——好困。"
+    hide character_action mhk with dissolve
+    show character_action mhk normal at pos_center with dissolve
     "我躺在床上，闭上眼睛，回想着过往。"
     "真庆幸玲那家伙没有当上学生会会长，不然连音乐老师都会被迫变成她那样的人。"
     "{size=+10}！简直是世界的灾难！{/size}" with vpunch
@@ -50,8 +58,8 @@ label turn_boom:
     # 
     # 塑造压抑的氛围和什么东西即将爆发的感觉
     scene bg 练习室 with dissolve
-    show mhk normal at pos2
-    show rei normal at pos3
+    show character_action mhk normal at pos2
+    show character_action rei idle at pos3
     "练习室的窗帘紧拉着，早晨炽热的阳光从窗帘的缝隙中透出，空气十分闷热。"
     "我迈着有力的步伐走向窗口，拉开窗帘，大口呼吸着新鲜空气。"
     mhk "啦啦啦，新的一天就应该从打开所有的窗帘开始，还有窗户——"
@@ -75,10 +83,10 @@ label turn_boom:
     extend "练习实在是好困啊——"
     # 大家到齐，开始练习
     play sound sfx_door
-    show yuka normal at pos1 with dissolve
-    show kanna normal at pos4 with dissolve
-    show akr normal at pos2 with dissolve
-    show mhk normal at pos_center with dissolve
+    show character_action yuka smile at pos1 with dissolve
+    show character_action kanna normal at pos4 with dissolve
+    show character_action akr shy at pos2 with dissolve
+    show character_action mhk normal at pos_center with dissolve
     yuka "玲，美步子，早上好~今天这么早来练习啊。"
     rei "早上好。"
     # 塑造团宠
@@ -89,6 +97,8 @@ label turn_boom:
     akr "噗…"
     # 展现神奈和玲的不融洽关系
     kanna "谁让你吃那么多甜点，自作自受。"
+    hide character_action kanna with dissolve
+    show character_action kanna hostile at pos4 with dissolve
     kanna "不过既然来都来了……我才不是特意要陪你们练完，只是不想被说懒罢了。"
     "练习室里啪啪的拍手声响起，大家的目光都集中在友歌身上。"
     yuka "好！大家今天都很有精神，那就先从昨天的练习曲子开始吧。"
@@ -120,6 +130,8 @@ label turn_boom:
     rei "其实我刚刚演奏的时候，根本没有弹贝斯。"
     "大家" "什么？！"
     rei "我只是把手放在贝斯上，假装演奏而已。"
+    hide character_action rei with dissolve
+    show character_action rei upset at pos3 with dissolve
     play music bgm_serious
 
     # 爆点2：
@@ -149,6 +161,8 @@ label turn_boom:
     akr "玲…"
     mhk "玲！"
     "周围的声音变得模糊遥远，视野变得越来越狭窄。"
+    hide character_action mhk with dissolve
+    show character_action mhk shocked at pos_center with dissolve
     "只要伸出手。\n"
     extend "就能把乐队重新团结起来。"
     "还差一点，就能抓住玲的手。\n"
@@ -167,7 +181,7 @@ label turn_talk:
     # 但是老团的日常回不到以前快乐的氛围，比如突然的沉思之类的
     # 美步子动机：1. 自身元气属性想让大家展露笑容 2. 觉得玲是乐队必不可缺的成员
     scene bg 公园路 with dissolve
-    show mhk normal at pos3
+    show character_action mhk at_a_loss at pos3
     play music bgm_peaceful
     "从那以后，大家回到了日常的练习中，但我总是心不在焉。"
     "要是大家能告诉我玲回来了就好了…"
@@ -184,10 +198,10 @@ label turn_talk:
     mhk "好，到时候见啦~"
     # 试图维护昔日开心随性的氛围，但总有瑕疵
     scene bg 咖啡馆 with dissolve
-    show yuka normal at pos1
-    show kanna normal at pos4
-    show akr normal at pos2
-    show mhk normal at pos3
+    show character_action yuka smile at pos1
+    show character_action kanna normal at pos4
+    show character_action akr normal at pos2
+    show character_action mhk normal at pos3
     play music bgm_citypop_02
     yuka "美步子，这边这边~这样就都到齐了，真是太好了。"
     kanna "我先说好，我可不是因为想联系上玲才来的。"
@@ -198,6 +212,8 @@ label turn_talk:
     yuka "其实…昨天我和玲通了电话。"
     "我感觉心里有些不安。"
     yuka "她听起来没有什么精神，我问乐队的事，她只说了句“最近有点累”，就挂断了电话。"
+    hide character_action akr with dissolve
+    show character_action akr shy at pos2 with dissolve
     akr "……又是这样，上周我发消息问她要不要一起去书店，她到第二天才回我。"
     "原来大家都在小心翼翼地触碰着这个事实。"
     akr "你们觉得…玲会回来吗？"
@@ -209,8 +225,8 @@ label turn_talk:
     "玲就在那里，那个我们相遇的路口。"
 
     scene bg 公园路 with dissolve
-    show mhk normal at pos2
-    show rei normal at pos3
+    show character_action mhk normal at pos2
+    show character_action rei idle at pos3
     play music bgm_serious
     # 玲和美步子谈心，了解到各自所需，打开心结
     mhk "玲——你果然还是在这里啊。"
@@ -223,12 +239,18 @@ label turn_talk:
     mhk "是啊，玲，这句话可是你告诉我的哦~当时live结束后，你还捏了我的脸颊说“像这样笑出来，就是音乐的魅力”"
     rei "……你说得对，那句话确实是我说的。可是——你知道我为什么会累吗？"
     "我愣住了，玲的眼神中闪过一丝我从未见过的感情。"
+    hide character_action rei with dissolve
+    show character_action rei upset at pos3 with dissolve
     rei "不是因为大家忽视我的想法，也不是因为练习量太大，而是因为我觉得大家都没有勇气。"
     rei "梦想除了想成为的样子，还要有自己的样子。"
     rei "只有抛下了锚，才能扬帆起航。"
     "……"
     "…"
     "还有说不玩的未说出口的话，以及重要的话。但我们已经理解了彼此。"
+    hide character_action rei with dissolve
+    show character_action rei idle at pos3 with dissolve
+    hide character_action mhk with dissolve
+    show character_action mhk smile at pos2 with dissolve
     play music bgm_hope
     mhk "对了，下个月就是校园文化祭了，我们一起去吧。"
     rei "……你真是，一点都没变。"
@@ -253,9 +275,9 @@ label turn_roadshow:
 
     if debug:
         "（不远处，神奈、友歌和晶走了过来）"
-    show yuka normal at pos1 with dissolve
-    show kanna normal at pos4 with dissolve
-    show akr normal at pos2 with dissolve
+    show character_action yuka smile at pos1 with dissolve
+    show character_action kanna normal at pos4 with dissolve
+    show character_action akr shy at pos2 with dissolve
     yuka "美步子——这里这里！"
     kanna "真是的，大热天非要把人叫出来，要是没有好吃的限定甜点我绝对饶不了你。"
     akr "那个……文化祭的人真的好多啊……有点挤。"
@@ -264,7 +286,7 @@ label turn_roadshow:
     "就在这时，一个熟悉的身影出现在了约定的喷泉广场前。"
     if debug:
         "（玲登场，大家面面相觑）"
-    show rei normal at pos3 with dissolve
+    show character_action rei idle at pos3 with dissolve
     rei "美步子，我到了。你说有很重要的东西要给我看……"
     rei "诶？"
     yuka "啊，是玲！"
@@ -291,11 +313,11 @@ label turn_roadshow:
 
     # 爆点3：美步子一转攻势，赶鸭子上架
     scene bg 舞台 with dissolve
-    show yuka normal at stage_leftmost
-    show akr normal at stage_left
-    show mhk normal at stage_center
-    show rei normal at stage_right
-    show kanna normal at stage_rightmost
+    show character_action yuka normal at stage_leftmost
+    show character_action akr timid at stage_left
+    show character_action mhk excited at stage_center
+    show character_action rei idle at stage_right
+    show character_action kanna normal at stage_rightmost
     "台下不知什么时候已经围了一圈人，好奇地打量着我们这群看起来像是被临时绑架上台的倒霉蛋。"
     kanna "啧……烦死了，看什么看啊！"
     "神奈虽然嘴上抱怨着，但身体还是很诚实地背起了吉他，顺手拨了个极具攻击性的和弦。"
@@ -319,6 +341,8 @@ label turn_roadshow:
     "而我？我当然是扯开嗓子，就着粗糙的吉他扫弦大声唱出心里最想唱的旋律！"
     "乱七八糟的！"
     "但也……超级痛快！"
+    hide character_action mhk with dissolve
+    show character_action mhk foolish_laugh at stage_center with dissolve
 
     "就在这时，那个低沉、稳健，却又充满力量的声音加入了进来。"
     "是玲的贝斯。"
@@ -346,13 +370,23 @@ label turn_roadshow:
     mhk "嘿嘿嘿，不管怎样，好爽啊！"
     yuka "嗯！大家能像这样一起演奏，真的是太棒了！"
     akr "下次……我们再一起弹吧。"
+    hide character_action mhk with dissolve
+    show character_action mhk smile at stage_center with dissolve
+    hide character_action yuka with dissolve
+    show character_action yuka smile at stage_leftmost with dissolve
+    hide character_action akr with dissolve
+    show character_action akr smile at stage_left with dissolve
     play music bgm_hope
 
     # 彻底和解，回到正轨（但是是地狱难度）
     rei "……"
     rei "没办法。既然你们这么需要我，那我就勉为其难，再陪你们胡闹一阵子吧。"
     rei "不过事先说好，从明天开始，地狱级特训要重新启动了。不想掉队的，就给我咬紧牙关跟上。"
+    hide character_action mhk with dissolve
+    show character_action mhk upset at stage_center with dissolve
     mhk "诶——？！刚和好就要特训？救命啊——"
+    hide character_action mhk with dissolve
+    show character_action mhk smile at stage_center with dissolve
     "虽然嘴上喊着救命，但我的心里却像是喝了冰镇汽水一样畅快。"
     "我们的锚，终于抛下了。"
     "接下来……就是要扬帆起航了！"
