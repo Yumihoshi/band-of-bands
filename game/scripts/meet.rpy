@@ -6,22 +6,16 @@ label meet:
     scene bg 学校走廊
     with fade
 
-    "放学后，我把玲带到了走廊尽头。"
-    "这是我们四个的老地方——午休、放学、有事没事都在这儿碰头。"
-    "但今天，多了一个人。"
+    "走廊尽头是我们四人的老地方——午休、放学、有事没事都在这儿碰头。"
+    "但是今天，这里多了一个人。"
 
-    show mhk 通常 at pos1
+    show mhk_normal at pos1
     with dissolve
 
-    "玲跟在我身后，贝斯盒斜挎在肩上，步伐不快不慢。"
+    "玲跟在我身后，琴包斜挎在肩上，步伐不快不慢。"
 
-    show rei 通常 at pos4
+    show rei_normal at pos4
     with dissolve
-
-    mhk "玲，这边这边——"
-    mhk "她们应该已经在等了。"
-
-    rei "嗯。"
 
     "走廊那头，已经站着三个人影。"
 
@@ -29,36 +23,36 @@ label meet:
     hide rei
     with dissolve
 
-    show yuka 通常 at pos1
+    show yuka_normal at pos1
     with dissolve
 
-    show kanna 通常 at pos2
+    show kanna_normal at pos2
     with dissolve
 
-    show akr 通常 at pos4
+    show akr_normal at pos4
     with dissolve
 
     yuka "啊，来了来了——"
 
-    "友歌朝我们挥了挥手，笑容一如既往地让人安心。"
+    "友歌站起来朝我们挥了挥手，笑容一如既往地让人安心。"
 
-    "我带着玲走上前，站到三人和玲之间。"
+    "我和玲在三人的对面坐下"
 
     hide yuka
     hide kanna
     hide akr
     with dissolve
 
-    show mhk 通常 at at_left
+    show mhk_normal at at_left
     with dissolve
 
-    show rei 通常 at at_right
+    show rei_normal at at_right
     with dissolve
 
     mhk "咳咳——"
     mhk "那么，我正式介绍一下！"
 
-    mhk "这位是白间玲，我的同班同学，之前一直在别的乐队弹贝斯。"
+    mhk "这位是玲——白间玲——我的同班同学，之前一直在别的乐队弹贝斯。"
 
     rei "……白间玲。请多指教。"
 
@@ -68,27 +62,27 @@ label meet:
     mhk "然后，玲——"
 
     hide rei
-    show yuka 通常 at at_right
+    show yuka_normal at at_right
     with dissolve
 
-    mhk "这位是今若友歌！我们的鼓手。"
-    mhk "怎么说呢——友歌就像我们的大姐姐，会照顾人，脾气好得不得了。"
+    mhk "这位是友歌！我们的鼓手。"
+    mhk "怎么说呢——友歌就像我们的大姐姐，一直都很关照大家。"
 
-    yuka "初次见面，玲。以后要好好相处啊。"
+    yuka "又见面了，玲。以后要好好相处啊。"
 
     rei "……谢谢。"
 
     #"友歌笑"
 
     hide yuka
-    show kanna 通常 at pos4
+    show kanna_normal at pos4
     with dissolve
 
     mhk "然后是卫宫神奈——我们的吉他手。"
     mhk "她这个人啊，嘴上不太饶人，但其实心里什么都明白。"
     mhk "就是……嗯，俗称傲娇？"
 
-    kanna "喂!谁傲娇了。"
+    kanna "喂!你说谁是傲娇呢！"
     kanna "……卫宫神奈。吉他。"
 
     "神奈把视线从窗外收回来，看了玲一眼。"
@@ -101,11 +95,11 @@ label meet:
     kanna "……哼。"
 
     hide kanna
-    show akr 通常 at pos4
+    show akr_normal at pos4
     with dissolve
 
     mhk "最后是米野晶！我们的键盘手。"
-    mhk "晶不太爱说话，但她弹键盘的时候整个人都会发光。"
+    mhk "晶是个文学少女，不太爱说话，但她弹键盘的时候整个人都会发光。"
     mhk "还有，她是我们之中最靠谱的——除了有时候会一个人发呆。"
 
     akr "……你好。"
@@ -121,19 +115,17 @@ label meet:
     #"友歌在旁边笑。"
 
     hide akr
-    show yuka 通常 at pos4
+    show yuka_normal at pos4
     with dissolve
 
-    yuka "能被玲夸奖，晶一定很开心吧。"
-
-    "晶没有说话，但偷偷把脸藏到了文库本后面。"
-    "不过藏在书后面的嘴角，是弯的。"
+    "晶没有说话。但我看见她把脸藏到了文库本后面。"
+    "藏在书后面的嘴角，我敢肯定，是弯的。"
 
     hide mhk
     hide yuka
     with dissolve
 
-    show mhk 通常 at pos3
+    show mhk_normal at pos3
     with dissolve
 
     mhk "好——介绍完毕！"
@@ -142,20 +134,20 @@ label meet:
     hide mhk
     with dissolve
 
-    show mhk 通常 at pos1
+    show mhk_normal at pos1
     with dissolve
 
-    show kanna 通常 at pos2
+    show kanna_normal at pos2
     with dissolve
 
-    show yuka 通常 at pos4
+    show yuka_normal at pos4
     with dissolve
 
     mhk "玲是新加入的，所以我想着，要不要这周末先来一次合练？"
 
-    yuka "嗯……等等美步子，我们好像前几天刚练过一次吧？"
+    kanna "等等美步子，我们好像前几天刚练过一次吧？"
 
-    kanna "是啊,上周五才练过，这才过了几天。"
+    yuka "是啊,上周五才练过，这才过了几天。"
 
     mhk "诶——有吗？"
 
@@ -179,7 +171,7 @@ label meet:
     hide yuka
     with dissolve
 
-    show rei 通常 at pos3
+    show rei_normal at pos3
     with dissolve
 
     rei "……"
@@ -194,7 +186,7 @@ label meet:
 
     rei "还以为，会更频繁一点。"
 
-    show mhk 通常 at pos1
+    show mhk_normal at pos1
     with dissolve
 
     mhk "啊,这个——"
@@ -204,7 +196,7 @@ label meet:
     mhk "其实我们平时也不是每周都练啦，有时候隔两周，有时候——"
 
     hide mhk
-    show kanna 通常 at pos1
+    show kanna_normal at pos1
     with dissolve
 
     kanna "隔两周怎么了吗。"
@@ -220,7 +212,7 @@ label meet:
     "我看看玲，又看看神奈，手心有点出汗。"
 
     hide kanna
-    show mhk 通常 at pos1
+    show mhk_normal at pos1
     with dissolve
 
     mhk "好啦好啦——"
@@ -231,7 +223,7 @@ label meet:
     yuka "嗯，我觉得这样挺好。玲，可以吗？"
 
     hide rei
-    show rei 通常 at pos4
+    show rei_normal at pos4
     with dissolve
 
     rei "……嗯,下周。"
@@ -241,7 +233,7 @@ label meet:
     hide rei
     with dissolve
 
-    show mhk 通常 at pos3
+    show mhk_normal at pos3
     with dissolve
 
     mhk "那就这么定了！"
@@ -258,10 +250,10 @@ label meet:
     hide mhk
     with dissolve
 
-    show mhk 通常 at pos1
+    show mhk_normal at pos1
     with dissolve
 
-    show rei 通常 at pos4
+    show rei_normal at pos4
     with dissolve
 
     "走廊里只剩下我和玲。"
@@ -285,7 +277,7 @@ label meet:
 
     "玲没有笑，但也没有否认。"
 
-    rei "……一周。"
+    rei "……一周一次。"
 
     "我不知道她是在重复，还是在确认。"
     "但我总觉得——"
