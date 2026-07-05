@@ -126,7 +126,7 @@ transform at_center:
     yalign 0.50
     yoffset 300
 
-transform right:
+transform at_right:
     anchor (0.5, 0.5)
     zoom 0.8
     xalign 0.7
