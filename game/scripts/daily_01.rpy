@@ -9,19 +9,33 @@ label daily_01:
     scene bg 超市
     with fade
 
+    # ===== 表情切换测试 =====
+    show kanna_1 at pos2
+    with dissolve
+    ""
+    show kanna_2 at pos2
+    with dissolve
+    ""
+    show kanna_3 at pos2
+    with dissolve
+    ""
+    hide kanna_3
+    with dissolve
+    # ===== 测试结束 =====
+
     "——那是玲加入乐队的第一个周末。"
     
-    "然后就看到了她——玲已经在等着了。"
+    "然后就看到了她，玲已经在等着了。"
 
     "我比约定时间早了十五分钟到超市门口。"
 
-    show mhk 通常 at at_left
+    show mhk_normal at pos1
     with dissolve
     
     mhk "哼嗯哼~今天也是第一名"
     mhk "——诶、玲？！"
 
-    show rei 通常 at at_right
+    show rei_normal at pos4
     with dissolve
 
     mhk "我还特意提前了十五分钟呢——"
@@ -43,10 +57,10 @@ label daily_01:
     hide rei
     with dissolve
 
-    show mhk 通常 at at_left
+    show mhk_normal at pos1
     with dissolve
 
-    show rei 通常 at at_right
+    show rei_normal at pos4
     with dissolve
 
     rei "……你们平时，就这样放着吗。"
@@ -61,7 +75,7 @@ label daily_01:
     #其他人到达
 
     hide mhk
-    show yuka 通常 at at_left
+    show yuka_normal at pos1
     with dissolve
 
     yuka "久等了——美步子可以来帮我提一下可以吗?我给大家买了点饮料。"
@@ -73,13 +87,13 @@ label daily_01:
 
     rei "……今天也请多指教了。"
 
-    yuka "啊啦啦，以后就是一家人啦，不用太拘谨的～"
+    yuka "啊嘞啊嘞，以后就是一家人啦，不用太拘谨的～"
 
-    "我偷偷瞄了一眼玲——她的肩膀好像松下来了一点。"
+    "我偷偷瞄了一眼玲——她的眉头似乎舒展开了一些。"
 
     #晶和神奈到场
     hide rei
-    show akr 通常 at at_right
+    show akr_normal at pos4
     with dissolve
 
     #"晶抱着一本书,跟在友歌身后进来"
@@ -89,14 +103,13 @@ label daily_01:
     akr "……你好"
     #"晶只抬了一下眼，又迅速垂下去。"
     
-    yuka "啊,小晶还是有些怕生,等到熟悉以后还是很好相处的"
+    yuka "嘛,等到大家熟悉以后就会很好相处了"
 
-    mhk "嗯,灯xxxx"
     mhk "按时间来看,神奈应该也快到了"
 
     #"神奈出场"
     hide akr
-    show kanna 通常 at at_right
+    show kanna_normal at pos4
     with dissolve
 
     "她推门进来的时候，脖子上挂着耳机，头发随意地扎在脑后，目光在玲身上停了两秒。"
@@ -123,12 +136,8 @@ label daily_01:
 
     mhk "啊哈哈，又破音了,不过好开心——大家一起演奏的感觉最棒了！"
 
-    "但她隐约也注意到了：副歌的时候鼓和吉他错开了半拍，键盘有一段跑了调，晶的手抖了一下。"
-    "还有——玲的贝斯。每一个音都稳稳地落在拍子上，从头到尾没有错一个地方。"
-    "那个稳得过分的声音，让美步子有点在意。"
-
     #玲提出建议
-    show mhk 通常 at at_left
+    show mhk_normal at pos1
     with dissolve
 
     mhk "好,大家辛苦了！"
@@ -136,7 +145,7 @@ label daily_01:
     #"美步子展现出排练完特有的那种满足感。"
     "然后玲把贝斯放下，安静地开口了。"
 
-    show rei 通常 at at_right
+    show rei_normal at pos4
     with dissolve
 
     rei "……副歌的节奏，鼓和吉他没对上。"
@@ -148,7 +157,7 @@ label daily_01:
     #"晶的肩膀微微一缩。友歌从鼓后面探出头来，挠了挠脸。"
 
     hide mhk
-    show yuka 通常 at at_left
+    show yuka_normal at pos1
     with dissolve
 
     yuka "啊……确实，那块我老是抢拍，哈哈。"
@@ -158,7 +167,7 @@ label daily_01:
     "但神奈没有笑。"
 
     hide yuka
-    show kanna 通常 at at_left
+    show kanna_normal at pos1
     with dissolve
 
     kanna "……第一次练习，差不多就行了吧。"
@@ -169,7 +178,7 @@ label daily_01:
     rei "……"
 
     hide kanna
-    show mhk 通常 at at_left
+    show mhk_normal at pos1
     with dissolve
 
     "玲没有继续坚持。她低下头，重新拿起贝斯。"
@@ -183,7 +192,7 @@ label daily_01:
 
     "休息的时候，美步子坐到玲旁边。"
 
-    show mhk 通常 at at_left
+    show mhk_normal at pos1
     with dissolve
     mhk "玲，我跟你说——你知道我们当初是怎么凑到一起的吗？"
 
@@ -191,8 +200,7 @@ label daily_01:
 
     mhk "其实就是高二分班的时候——我们四个居然不在一个班。当时我就想，那可不行，得找个理由把大家聚在一起。"
     mhk "然后我就说，我们组乐队吧！这样不管分到哪个班，放学后都能在一起。"
-    mhk "一开始只是想找个借口而已……结果神奈说她刚好在学吉他，晶说她练过键盘，友歌选了鼓。"
-    mhk "莫名其妙就变成真的了。"
+    mhk "一开始只是想找个借口而已……结果莫名其妙就变成真的了。"
 
     "玲听着，偶尔点一下头。但美步子总觉得那双眼睛在看向别处。"
 
@@ -221,7 +229,7 @@ label daily_01:
 
     "神奈弹完最后一个音，把吉他往架子上一靠，甩了甩手。"
 
-    show kanna 通常 at at_center
+    show kanna_normal at pos3
     with dissolve
 
     kanna "今天就这样吧，手酸了。"
@@ -229,7 +237,7 @@ label daily_01:
     mhk "神奈今天是不是比平时更急？"
 
     hide kanna
-    show mhk 通常 at at_center
+    show mhk_normal at pos3
     with dissolve
 
     mhk "嗯,大家辛苦了!  ——下周还是这个时间吧？"
@@ -241,7 +249,7 @@ label daily_01:
     mhk "玲……"
 
     hide mhk
-    show rei 通常 at at_center
+    show rei_normal at pos3
     with dissolve
 
     "玲低头看着琴弦，指腹轻轻按在第四弦上，没有声音。"
@@ -249,14 +257,14 @@ label daily_01:
     "我从后面探过头去，尽量让自己的声音听起来明亮。"
 
     hide rei
-    show mhk 通常 at at_left
+    show mhk_normal at pos1
     with dissolve
 
     mhk "玲，今天感觉怎么样？大家人都很好吧～"
 
     "玲抬起头，看着我。"
 
-    show rei 通常 at at_right
+    show rei_normal at pos4
     with dissolve
 
     rei "……嗯。"
