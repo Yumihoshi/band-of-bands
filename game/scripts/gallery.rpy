@@ -94,7 +94,7 @@ screen gallery_bg():
                     xsize 280
                     ysize 158
                     
-                    action Show("gallery_view", gallery_img=img, gallery_title=name)
+                    action Show("gallery_view", gallery_img=img, gallery_title=name, is_char=False)
                     
                     add img:
                         xsize 280
@@ -125,7 +125,7 @@ screen gallery_char():
                     xsize 140
                     ysize 280
                     
-                    action Show("gallery_view", gallery_img=img, gallery_title=name)
+                    action Show("gallery_view", gallery_img=img, gallery_title=name, is_char=True)
                     
                     add img:
                         xsize 140
@@ -141,7 +141,7 @@ screen gallery_char():
 
 
 # 全屏查看
-screen gallery_view(gallery_img, gallery_title):
+screen gallery_view(gallery_img, gallery_title, is_char=False):
     
     # 点击图片任意位置关闭预览
     button:
@@ -149,6 +149,9 @@ screen gallery_view(gallery_img, gallery_title):
         yfill True
         
         action Hide("gallery_view")
+        
+        if is_char:
+            add "#ffffff"
         
         add gallery_img:
             xalign 0.5 yalign 0.5
