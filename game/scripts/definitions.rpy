@@ -22,8 +22,10 @@ image bg 桌椅4 = "background/desk_chair_04.png"
 image bg 公园路 = "background/street_park.png"
 image bg 河边 = "background/street_river.png"
 image bg 舞台 = "background/stage.png"
+image bg 练习室 = "background/practice_room.png"
 image bg 音乐商店 = "background/music_store.png"
 image bg 商场 = "background/shopping_mall.png"
+
 
 # 角色立绘
 image rei normal = "images/rei_normal.png"
