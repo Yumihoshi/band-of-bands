@@ -89,7 +89,7 @@ transform pos1:
     zoom 0.8
     xalign 0.125
     yalign 0.50
-    yoffset 300、
+    yoffset 300
 
 transform pos2:
     anchor (0.5, 0.5)
