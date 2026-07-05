@@ -32,17 +32,15 @@ define config.default_fullscreen = True
 
 define gui.about = _p("""
 乐队的乐队\n\n
-
 抛锚乐队的人员变动通知！！！\n
 从即日起，白间 玲将不再担任抛锚乐队的贝斯手。\n
 人生有梦，各自精彩！\n\n
-
-【开发团队】
+【开发团队】\n
 主策：白鱼\n
 程序：白鱼、绘星\n
 美术：玖、羽毛球\n
-文案：SKewer、白鱼、绘星\n
-音乐音效：洛殀\n
+文案：绘星、白鱼、SKewer\n
+音乐音效：洛煌\n
 
 本作品代码遵循 MIT 许可证开源发布。\n
 仓库地址：{a=https://github.com/Yumihoshi/band-of-bands}链接{/a}
