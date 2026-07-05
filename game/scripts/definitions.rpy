@@ -31,6 +31,7 @@ image bg 音乐商店 = "background/music_store.png"
 image bg 商场 = "background/shopping_mall.png"
 
 
+
 # 角色立绘
 image rei normal = "images/rei_normal.png"
 image akr normal = "images/akr_normal.png"
@@ -83,13 +84,6 @@ image character_action mhk upset = "images/character_action/mhk/ymq_emotion_upse
 # 锚点与位置设置
 # =============================================================
 
-transform pos1:
-    anchor (0.5, 0.5)
-    zoom 0.8
-    xalign 0.125
-    yalign 0.50
-    xoffset -180
-    yoffset 300
 
 
 transform pos2:
@@ -182,3 +176,52 @@ define sfx_phone = "sfx/sfx_phone.mp3"
 define sfx_school = "sfx/sfx_scholl.mp3"
 define sfx_tip = "sfx/sfx_tip.wav"
 define sfx_walk = "sfx/sfx_walk.wav"
+
+transform pos1:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.125
+    yalign 0.50
+    yoffset 300、
+
+transform pos2:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.375
+    yalign 0.50
+    yoffset 300
+
+transform pos3:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.625
+    yalign 0.50
+    yoffset 300
+
+transform pos4:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.875
+    yalign 0.50
+    yoffset 300
+
+transform at_left:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.3
+    yalign 0.50
+    yoffset 300
+
+transform at_center:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.5
+    yalign 0.50
+    yoffset 300
+
+transform right:
+    anchor (0.5, 0.5)
+    zoom 0.8
+    xalign 0.7
+    yalign 0.50
+    yoffset 300
